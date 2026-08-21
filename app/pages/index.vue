@@ -1,32 +1,18 @@
 <script setup lang="ts">
+const { list } = useProjects();
+const { data: featuredProjects } = await useAsyncData("projects", () => list());
+
 useSeoMeta({
   title: "main",
   description: "Backend / Software Engineer focused on high-scale systems",
 });
-
-const featuredProjects = [
-  {
-    title: '"Zakalbeg" Sports Platform',
-    description:
-      "Asynchronous backend for a sports web service with NATS, FastAPI and PostgreSQL.",
-    stack: ["FastAPI", "PostgreSQL", "NATS", "TaskIQ", "Docker"],
-    link: "/projects/sports-platform",
-  },
-  {
-    title: "Event Processing System",
-    description:
-      "High-throughput event processing service with observability and reliable task handling.",
-    stack: ["Python", "NATS", "Redis", "PostgreSQL"],
-    link: "/projects/event-processing",
-  },
-];
 </script>
 
 <template>
   <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-28 pb-20 space-y-24">
     <section class="space-y-6">
       <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">
-        Timothy Zykov
+        Timothy Zykov / <span class="text-sky-500">syrochki</span>
       </h1>
       <p class="text-xl text-muted">Rising Backend & Software Engineer</p>
       <p class="text-lg text-muted max-w-2xl">
@@ -60,7 +46,7 @@ const featuredProjects = [
         <NuxtLink
           v-for="project in featuredProjects"
           :key="project.title"
-          :to="project.link"
+          :to="`/projects/${project.slug}`"
           class="block p-6 rounded-xl border border-muted hover:border-primary/50 transition-colors"
         >
           <h3 class="text-lg font-medium mb-2">

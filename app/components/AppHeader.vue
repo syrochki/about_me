@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem } from "@nuxt/ui";
 
 defineProps<{
-  links: NavigationMenuItem[]
-}>()
+  links: NavigationMenuItem[];
+}>();
 </script>
 
 <template>
-  <header class="fixed top-0 inset-x-0 z-50 flex justify-center pt-3 sm:pt-4 pointer-events-none">
+  <header
+    class="fixed top-0 inset-x-0 z-50 flex justify-center pt-3 sm:pt-4 pointer-events-none"
+  >
     <div class="pointer-events-auto">
       <UNavigationMenu
         :items="links"
@@ -16,7 +18,7 @@ defineProps<{
         class="bg-muted/80 backdrop-blur-md rounded-full px-2 sm:px-3 border border-default/50 shadow-sm"
         :ui="{
           link: 'px-2.5 py-1.5 text-sm',
-          linkLeadingIcon: 'hidden'
+          linkLeadingIcon: 'hidden',
         }"
       >
         <template #list-trailing>

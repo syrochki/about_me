@@ -2,9 +2,9 @@
 import type { NavigationMenuItem } from "@nuxt/ui";
 
 const links: NavigationMenuItem[] = [
-  { label: "main", to: "/" },
-  { label: "projects", to: "/projects" },
-  { label: "about", to: "/about" },
+  { label: "Main", to: "/" },
+  { label: "Projects", to: "/projects" },
+  { label: "About", to: "/about" },
 ];
 </script>
 

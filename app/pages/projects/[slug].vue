@@ -24,7 +24,12 @@ useSeoMeta({
 <template>
   <div v-if="project" class="max-w-3xl mx-auto px-4 sm:px-6 pt-8 pb-20">
     <div class="mb-8">
-      <UButton to="/projects" variant="ghost" color="neutral">
+      <UButton
+        to="/projects"
+        variant="ghost"
+        color="neutral"
+        class="md:text-sm text-base"
+      >
         <UIcon name="i-mingcute-arrow-left-fill" class="mt-0.5" />
         /projects
       </UButton>
