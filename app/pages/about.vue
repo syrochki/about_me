@@ -1,14 +1,14 @@
 <script setup lang="ts">
 useSeoMeta({
   title: "about",
-  description: "About Timothy Zykov — Backend / Software Engineer",
+  description: "About me",
 });
 
 const contacts = [
   {
     label: "Telegram",
-    value: "@palaroid800",
-    to: "https://t.me/palaroid800",
+    value: "@syrochkidev",
+    to: "https://t.me/syrochkidev",
     target: "_blank",
     icon: "i-simple-icons-telegram",
   },
@@ -21,8 +21,8 @@ const contacts = [
   },
   {
     label: "Email",
-    value: "syr0chk1@proton.me",
-    to: "mailto:syr0chk1@proton.me",
+    value: "timzyk.apps@gmail.com",
+    to: "mailto:timzyk.apps@gmail.com",
     icon: "i-lucide-mail",
   },
 ];

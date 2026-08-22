@@ -12,7 +12,7 @@ useSeoMeta({
   <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-28 pb-20 space-y-24">
     <section class="space-y-6">
       <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">
-        Timothy Zykov / <span class="text-sky-500">syrochki</span>
+        Tim Zykov / <span class="text-sky-500">syrochki</span>
       </h1>
       <p class="text-xl text-muted">Rising Backend & Software Engineer</p>
       <p class="text-lg text-muted max-w-2xl">
