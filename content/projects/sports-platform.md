@@ -11,7 +11,7 @@ stack:
   - Docker
 year: "2025"
 role: Fullstack Developer & Webmaster
-github: https://github.com/syrochki
+github: https://github.com/syrochki/zakalbeg
 featured: true
 order: 1
 published: true

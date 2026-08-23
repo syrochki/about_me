@@ -19,7 +19,7 @@ useHead({
 });
 
 useSeoMeta({
-  titleTemplate: "%s - syrochki",
+  titleTemplate: "%s - Timothy Zykov",
   twitterCard: "summary_large_image",
 });
 </script>
