@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/fonts",
     "@nuxt/content",
+    "@vercel/analytics",
   ],
   css: ["~/assets/css/main.css"],
   vite: {
