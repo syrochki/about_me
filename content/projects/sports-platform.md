@@ -23,7 +23,7 @@ featured: true
 order: 1
 published: true
 highlights:
-  - Designed and built the full product alone: frontend, backend, SEO, email, infra and deployment
+  - Designed and built frontend, backend, SEO, email, infra and deployment
   - Delivered interactive route maps per event with downloadable routes for sports watches
   - Implemented modular backend architecture (Repository / Service / API) with domain modules
   - Built registration flow with capacity limits, category validation and relational data loading
@@ -33,7 +33,7 @@ highlights:
 
 ## Overview
 
-**ZakalBeg** was a running-events platform inspired by sites like RussiaRunning and local race portals.  
+**ZakalBeg** was a running-events platform inspired by sites like RussiaRunning, runin.by and local race portals.  
 The target audience was runners and outdoor athletes looking for events, routes and community content.
 
 I owned the project end-to-end: requirements research, architecture, frontend, backend, media storage, SEO, email delivery and production deployment. The platform was developed over ~6 months and ran in production for several months.
