@@ -62,6 +62,7 @@ Backend structure followed a modular, DDD-inspired layout:
 - `auth`
 - `users`
 - `races`
+- `registrations`
 - `blog`
 - `map`
 - email/event handlers
