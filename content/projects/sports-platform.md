@@ -27,7 +27,8 @@ highlights:
   - Delivered interactive route maps per event with downloadable routes for sports watches
   - Implemented modular backend architecture (Repository / Service / API) with domain modules
   - Built registration flow with capacity limits, category validation and relational data loading
-  - Set up async email workflows via NATS/FastStream and Redis-backed auth experiments
+  - Implemented cookie-based authentication with Redis session storage
+  - Set up async email workflows via NATS/FastStream for verification and account events
   - Deployed production stack on VPS with Docker Compose, Nginx, MinIO and DNS/email records
 ---
 
@@ -89,8 +90,10 @@ Key technical work:
   - category validation by gender/age relative to event date
   - eager loading of related entities
 - **MinIO** module for media/object storage
-- **Redis** for caching, queue-related needs and auth experimentation
-- Auth started with JWT, then moved toward **FastAPI Users + Redis-backed session-style flow** as an experiment
+- **Redis** for caching, queues and auth session storage
+- Authentication was **cookie-based**, built around **FastAPI Users** with session data stored in **Redis**
+  - started from a JWT approach
+  - then moved to cookie + Redis sessions as a more practical browser auth model
 - **NATS + FastStream** for background auth-related email events:
   - verification codes
   - registration emails
@@ -132,11 +135,11 @@ Production deployment:
 - **Nginx** as reverse proxy
 - email delivery integration for auth workflows
 
-## Results & Lessons
+## Thoughts about this
 
 The product reached production and stayed online for about 3–4 months, but traction stayed low and the client disappeared without completing payment or supporting monetization rollout. As one of my early client projects, scope and delivery planning had clear mistakes.
 
-What the project still demonstrates:
+But with expirience with this project I can show:
 
 - ability to take a product from idea/competitors research to deployed production system
 - full-stack ownership across UI, API, data, infra and SEO
