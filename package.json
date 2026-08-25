@@ -12,9 +12,6 @@
     "lintfix": "eslint . --fix",
     "typecheck": "nuxt typecheck"
   },
-  "engines": {
-    "node": "22.x"
-  },
   "dependencies": {
     "@nuxt/content": "3.15.2",
     "@nuxt/fonts": "0.14.0",
